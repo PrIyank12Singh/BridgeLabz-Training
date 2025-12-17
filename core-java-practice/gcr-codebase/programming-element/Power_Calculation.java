@@ -7,13 +7,9 @@ class PowerCalculation {
         int base = sc.nextInt();
         int exponent = sc.nextInt();
 
-        long result = 1;
+        System.out.println((int)Math.pow(base,exponent));
 
-        for (int i = 1; i <= exponent; i++) {
-            result = result * base;
-        }
-
-        System.out.println(result);
+        
         sc.close();
     }
 }
