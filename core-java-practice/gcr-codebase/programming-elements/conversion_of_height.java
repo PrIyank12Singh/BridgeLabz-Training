@@ -1,16 +1,16 @@
 import java.util.*;
 public class conversion_of_height {
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    double centimeters = sc.nextInt();
+    Scanner sc = new Scanner(System.in);   //Scanner is taken for input
+    double centimeters = sc.nextInt();  //Input for centimeters 
 
-    double inches = centimeters/2.54;
+    double inches = centimeters/2.54;   //Calculation of inches
 
-    int feet = (int)(inches/12);
+    double feet = (inches/12);  //Calculation of feet from inches
 
-    int remaining_inches = (int)(inches%12);
+    
 
-    System.out.println("Your Height in cm is  "+centimeters+" while in feet is "+feet+" and inches is "+ remaining_inches);
+    System.out.println("Your Height in cm is  "+centimeters+" while in feet is "+feet+" and inches is "+ inches);
 
     sc.close();
   }
