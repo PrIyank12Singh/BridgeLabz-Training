@@ -1,21 +1,17 @@
-#Current Structure of Git Hub
+## 📁 Current GitHub Repository Structure
+
+```text
 BridgeLabz-Training/
-|
 ├── core-java-practice/   (Branch & Folder Name)
-│   |
 │   ├── gcr-codebase/
-│   │   |
 │   │   ├── programming-elements/
-│   │   |
 │   │   ├── control-flow/
-│   │   |
 │   │   ├── arrays/
-│   │   |
 │   │   └── strings/
-│   |
 │   ├── leet-code-codebase/
-│   |
 │   └── scenario-based/
+```
+
 
 
 
@@ -30,6 +26,7 @@ BridgeLabz-Training/
 
 
   
+
 
 
 
