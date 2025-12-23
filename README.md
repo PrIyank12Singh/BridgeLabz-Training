@@ -1,4 +1,24 @@
-﻿# Daily Progress Log - BridgeLabz
+#Current Structure of Git Hub
+BridgeLabz-Training/
+|
++-- core-java-practice/  (Branch & Folder Name)
+|   |
+|   +-- gcr-codebase/
+|   |   |
+|   |   +-- programming-elements/
+|   |   |
+|   |   +-- control-flow/
+|   |   |
+|   |   +-- arrays/
+|   |   |
+|   |   +-- strings/
+|   |
+|   +-- leet-code-codebase/
+|   |
+|   +-- scenario-based/
+
+
+ # Daily Progress Log - BridgeLabz
  
 ## Week 1 - Core Programming
 - 17-Dec-2025 (Wednesday) : Prerequisite installation Guide for Git Bash. Solved 10 basic maths programs and 4 leetcode based programs.
@@ -9,6 +29,7 @@
 
 
   
+
 
 
 
