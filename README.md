@@ -1,21 +1,22 @@
 #Current Structure of Git Hub
 BridgeLabz-Training/
 |
-+-- core-java-practice/  (Branch & Folder Name)
-|   |
-|   +-- gcr-codebase/
-|   |   |
-|   |   +-- programming-elements/
-|   |   |
-|   |   +-- control-flow/
-|   |   |
-|   |   +-- arrays/
-|   |   |
-|   |   +-- strings/
-|   |
-|   +-- leet-code-codebase/
-|   |
-|   +-- scenario-based/
+├── core-java-practice/   (Branch & Folder Name)
+│   |
+│   ├── gcr-codebase/
+│   │   |
+│   │   ├── programming-elements/
+│   │   |
+│   │   ├── control-flow/
+│   │   |
+│   │   ├── arrays/
+│   │   |
+│   │   └── strings/
+│   |
+│   ├── leet-code-codebase/
+│   |
+│   └── scenario-based/
+
 
 
  # Daily Progress Log - BridgeLabz
@@ -29,6 +30,7 @@ BridgeLabz-Training/
 
 
   
+
 
 
 
