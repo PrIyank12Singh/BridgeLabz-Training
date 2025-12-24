@@ -17,6 +17,7 @@ class RemoveDuplicates {
         int index = 1; // next position to insert unique number
 
         for(int i = 1; i < n; i++){
+            
             if(nums[i] != nums[i - 1]){
                 nums[index] = nums[i];
                 index++;

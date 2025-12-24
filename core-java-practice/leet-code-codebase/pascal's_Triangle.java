@@ -8,6 +8,7 @@ class PascalsTriangle {
         int n = sc.nextInt();   // number of rows
 
         for (int i = 0; i < n; i++) {
+            
 
             int value = 1;
 

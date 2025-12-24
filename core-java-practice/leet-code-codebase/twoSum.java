@@ -6,8 +6,10 @@ public class twoSum {
 
     public static int[] twoSum(int[] nums, int target) {
         for(int i=0;i<nums.length;i++){
+
             int n1=nums[i];
             for(int j=0;j<nums.length;j++){
+                
                 int n2=nums[j];
                 if(i!=j && n1+n2==target){
             
