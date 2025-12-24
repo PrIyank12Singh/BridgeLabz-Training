@@ -38,7 +38,7 @@ public class illegal_argument_exception {
     }
 
     public static void main(String[] args) {
-
+        //Taking input
         Scanner sc = new Scanner(System.in);
 
         // Taking user input

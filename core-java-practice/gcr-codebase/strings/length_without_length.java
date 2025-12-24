@@ -18,6 +18,7 @@ public class length_without_length {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
+        //Taking input
 
         
         String input = scan.next();

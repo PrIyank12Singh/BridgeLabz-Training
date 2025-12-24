@@ -49,6 +49,7 @@ public class deck_of_cards {
     }
 
     public static void main(String[] args) {
+        //Taking input
         Scanner scan = new Scanner(System.in);
         String[] deck = initializeDeck();
         shuffleDeck(deck);

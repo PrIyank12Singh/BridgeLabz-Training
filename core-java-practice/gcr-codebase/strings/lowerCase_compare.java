@@ -29,6 +29,7 @@ public class lowerCase_compare {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
+        //Taking input
 
         System.out.print("Enter text: ");
         String input = scan.nextLine();

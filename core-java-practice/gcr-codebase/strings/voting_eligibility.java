@@ -25,6 +25,7 @@ public class voting_eligibility {
     }
 
     public static void main(String[] args) {
+        //Taking input
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Enter number of students: ");

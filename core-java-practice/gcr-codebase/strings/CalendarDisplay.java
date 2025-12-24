@@ -45,6 +45,7 @@ public class CalendarDisplay {
     }
 
     public static void main(String[] args) {
+        //Taking input
         Scanner input = new Scanner(System.in);
         System.out.println("Enter month (1-12):");
         int month = input.nextInt();

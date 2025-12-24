@@ -26,6 +26,7 @@ public class vowel_consonant_table {
     }
 
     public static void main(String[] args) {
+        //Taking input
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter text: ");
         String text = scan.nextLine();

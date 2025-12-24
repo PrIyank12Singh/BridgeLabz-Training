@@ -21,6 +21,7 @@ public class AnagramCheck {
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
+        //Taking input
         System.out.println("Enter first string:");
         String text1 = s.nextLine();
         System.out.println("Enter second string:");

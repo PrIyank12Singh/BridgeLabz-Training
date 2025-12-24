@@ -21,6 +21,7 @@ public class vowels_and_consonants {
     }
 
     public static void main(String[] args) {
+        //Taking input
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Enter text: ");

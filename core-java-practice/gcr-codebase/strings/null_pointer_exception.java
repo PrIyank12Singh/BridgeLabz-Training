@@ -3,7 +3,7 @@ import java.util.*;
 public class null_pointer_exception {
   // Method to generate NullPointerException
     static void generateException() {
-        String t = null;   // variable initialized to null
+        String t = null;   // variable initialized to be null
         System.out.println(t.length()); // calling String method → Exception
     }
 

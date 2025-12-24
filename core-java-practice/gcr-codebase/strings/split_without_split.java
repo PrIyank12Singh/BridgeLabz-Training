@@ -37,6 +37,7 @@ public class split_without_split {
     }
 
     public static void main(String[] args) {
+        //Taking input
         Scanner scan = new Scanner(System.in);
 
         

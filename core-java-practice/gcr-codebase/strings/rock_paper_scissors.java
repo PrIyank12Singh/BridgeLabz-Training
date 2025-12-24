@@ -44,6 +44,7 @@ public class rock_paper_scissors {
     }
 
     public static void main(String[] args) {
+        //Taking input
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Enter number of games: ");

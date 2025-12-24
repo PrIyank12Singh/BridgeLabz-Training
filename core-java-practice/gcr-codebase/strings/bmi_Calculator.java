@@ -29,6 +29,7 @@ public class bmi_Calculator {
 
     // Method to display the BMI table
     public static void displayBMI(String[][] bmiData) {
+
         System.out.printf("%-10s %-10s %-10s %-15s\n", "Weight(kg)", "Height(cm)", "BMI", "Status");
         System.out.println("--------------------------------------------------");
         for (String[] person : bmiData) {
@@ -37,6 +38,7 @@ public class bmi_Calculator {
     }
 
     public static void main(String[] args) {
+        //Taking input
         Scanner scan = new Scanner(System.in);
         double[][] teamData = new double[10][2];
 

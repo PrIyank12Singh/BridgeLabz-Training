@@ -5,7 +5,7 @@ public class number_format_exception {
     static void generateException(String text) {
 
         int number = Integer.parseInt(text); // Runtime Exception
-        System.out.println("Number is: " + number); // This line will not execute
+        System.out.println("Number is: " + number); // This line will not executed
     }
 
     // Method 2: Handles NumberFormatException and RuntimeException

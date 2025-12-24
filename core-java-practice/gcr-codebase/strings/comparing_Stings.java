@@ -2,6 +2,7 @@ import java.util.*;
 
 public class comparing_Stings {
   public static void main(String[] args) {
+    //Taking input
     Scanner sc = new Scanner(System.in);
     
     //taking s1 and s2 as input

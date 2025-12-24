@@ -29,6 +29,7 @@ public class words_with_Length {
     }
 
     public static void main(String[] args) {
+        //Taking input
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Enter text: ");

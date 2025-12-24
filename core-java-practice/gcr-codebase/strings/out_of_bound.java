@@ -12,7 +12,7 @@ public class out_of_bound {
     static void handleException(String[] names) {
         System.out.println("\nHandling Exception using try-catch...");
         try {
-            System.out.println(names[names.length]); // Invalid index
+            System.out.println(names[names.length]); // Invalid indexes
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("ArrayIndexOutOfBoundsException Caught: " + e);
         } catch (RuntimeException e) {

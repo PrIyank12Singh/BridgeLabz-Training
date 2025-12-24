@@ -27,6 +27,7 @@ public class shortest_length {
     }
 
     public static void main(String[] args) {
+        //Taking input
         Scanner scan = new Scanner(System.in);
 
         

@@ -23,6 +23,7 @@ public class char_Compare {
     return true;
   }
   public static void main(String[] args) {
+    //Taking input
     Scanner sc = new Scanner(System.in);
     String s = sc.next();
 

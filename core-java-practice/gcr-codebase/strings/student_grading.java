@@ -66,6 +66,7 @@ public class student_grading {
     }
 
     public static void main(String[] args) {
+        //Taking input
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Enter number of students: ");
