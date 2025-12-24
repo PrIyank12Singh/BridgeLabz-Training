@@ -4,6 +4,8 @@ public class digit_frequency {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
+    //taking number as a input
+
     int num = sc.nextInt();
     int[] freq = new int[10];
 
@@ -13,7 +15,7 @@ public class digit_frequency {
     }
 
     for (int i = 0; i < 10; i++) {
-      
+
       System.out.println(i+" occurs "+freq[i]+" times");
     }
 
