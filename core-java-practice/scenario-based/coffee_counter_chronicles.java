@@ -6,6 +6,7 @@ public class coffee_counter_chronicles {
     final double GST_rate = 0.18; //18% GST
 
     while (true) {
+      
       String coffee_type = sc.next();       //taking input of coffee type 
 
       if(coffee_type.equalsIgnoreCase("exit")){

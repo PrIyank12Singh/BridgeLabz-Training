@@ -8,6 +8,7 @@ public class ElectionBoothManager {
         int countA = 0, countB = 0, countC = 0;
 
         while (true) {
+            
             System.out.print("Enter age (or -1 to stop): ");
             int age = input.nextInt();
 

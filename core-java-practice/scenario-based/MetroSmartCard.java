@@ -14,6 +14,7 @@ public class MetroSmartCard {
 
             // Exit condition
             if (distance == -1) {
+                
                 break;
             }
 
