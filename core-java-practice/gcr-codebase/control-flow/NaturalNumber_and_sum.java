@@ -4,6 +4,7 @@ public class NaturalNumber_and_sum {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
+    //Taking input
     int n = sc.nextInt();
 
     if(n<=0){

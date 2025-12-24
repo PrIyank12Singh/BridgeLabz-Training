@@ -4,6 +4,7 @@ public class odd_or_even {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
+    //Taking input
     int n = sc.nextInt();
 
     if(n<1){

@@ -1,6 +1,7 @@
 import java.util.*;
 public class bmi_calculation {
   public static void main(String[] args) {
+    //Taking n as a input
     Scanner sc = new Scanner(System.in);
     //input weight and height
 

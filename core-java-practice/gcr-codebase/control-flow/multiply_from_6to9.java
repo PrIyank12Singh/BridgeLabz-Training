@@ -3,7 +3,7 @@ import java.util.*;
 public class multiply_from_6to9 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    
+    //Taking input
     int n = sc.nextInt();
 
     if(n<=0){

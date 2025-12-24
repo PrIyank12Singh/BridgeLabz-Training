@@ -4,6 +4,8 @@ public class day_Of_week {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
+    //Taking input
+
     int m = sc.nextInt();
     int d = sc.nextInt();
     int y = sc.nextInt();

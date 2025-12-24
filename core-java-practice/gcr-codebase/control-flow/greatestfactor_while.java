@@ -3,6 +3,7 @@ import java.util.*;
 public class greatestfactor_while {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
+    //Taking input
     int n = sc.nextInt();
 
     int greatestfactor = 1;

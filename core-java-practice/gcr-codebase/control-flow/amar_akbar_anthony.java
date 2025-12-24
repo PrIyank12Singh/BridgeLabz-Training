@@ -2,6 +2,7 @@ import java.util.*;
 
 public class amar_akbar_anthony {
   public static void main(String[] args) {
+    //Taking n as a input
     Scanner sc = new Scanner(System.in);
 
     //ages

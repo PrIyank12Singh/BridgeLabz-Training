@@ -5,6 +5,7 @@ public class decrementing_forLoop {
     
     Scanner sc = new Scanner(System.in);
 
+    //Taking input
     int n = sc.nextInt();
 
     //decrementing value by for loop

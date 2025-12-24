@@ -4,6 +4,7 @@ public class checking_prime {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
+    //Taking input
     int n = sc.nextInt();
     boolean isPrime = true;
 

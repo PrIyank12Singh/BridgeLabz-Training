@@ -4,6 +4,7 @@ public class springSeason_orNot {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
+    //Taking input
     int month = sc.nextInt();
     int day = sc.nextInt();
 

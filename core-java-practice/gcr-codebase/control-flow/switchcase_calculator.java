@@ -3,7 +3,7 @@ import java.util.*;
 public class switchcase_calculator {
   public static void main(String[] args) {
     Scanner sc = new  Scanner(System.in);
-
+    //Taking input
     double num1 = sc.nextDouble();
     double num2 = sc.nextDouble();
 

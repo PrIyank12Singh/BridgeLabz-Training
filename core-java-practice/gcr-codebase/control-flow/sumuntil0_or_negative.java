@@ -4,6 +4,7 @@ public class sumuntil0_or_negative {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
+    //Taking input
     double total = 0.0;
 
     double value = sc.nextDouble();

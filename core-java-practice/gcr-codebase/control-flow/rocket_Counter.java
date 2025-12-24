@@ -3,7 +3,7 @@ import java.util.*;
 public class rocket_Counter {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    
+    //Taking input
     int n = sc.nextInt();
 
     int i=n;

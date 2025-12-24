@@ -3,6 +3,7 @@ import java.util.*;
 public class is_First_Smallest {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
+    //Taking input
 
     //Taking a,b,c as input
     int a = sc.nextInt();

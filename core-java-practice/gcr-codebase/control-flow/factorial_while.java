@@ -3,7 +3,7 @@ import java.util.*;
 public class factorial_while {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    
+    //Taking input
     int n = sc.nextInt();
 
     if(n<0){

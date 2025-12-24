@@ -3,6 +3,7 @@ import java.util.*;
 public class divisible_by_5 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
+    //Taking input
     //taking any number as input
     int number = sc.nextInt();
 

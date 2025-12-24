@@ -3,6 +3,7 @@ import java.util.*;
 public class harshad_number {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
+    //Taking input
     int n = sc.nextInt();
     int sum = 0;
     int temp = n;

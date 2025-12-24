@@ -3,7 +3,7 @@ import java.util.*;
 public class grading_on_average_of3 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-
+    //Taking input
     //taking marks of 3 subjects as input
     int physics = sc.nextInt();
     int chemistry = sc.nextInt();
