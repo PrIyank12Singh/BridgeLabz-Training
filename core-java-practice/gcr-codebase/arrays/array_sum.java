@@ -12,9 +12,10 @@ public class array_sum {
 
     //Infinite while loop
     while (true) {
+
       double num = sc.nextDouble();
 
-      //break if number is 0 or negative
+      //break if number is 0 or negative 
       if (num<=0) {
         break;
       }
@@ -36,7 +37,7 @@ public class array_sum {
     }
 
     //display total
-    System.out.println("\nSum of all numbers = "+total);
+    System.out.println("\nSum of all number = "+total);
     sc.close();
   }
 }

@@ -40,6 +40,7 @@ public class factors_in_array {
 
     //display factors
     for (int i = 0; i < index; i++) {
+      
       System.out.println(factors[i]+" ");
     }
 

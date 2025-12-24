@@ -21,6 +21,7 @@ public class youngest_and_tallest {
     //finding who is youngest and who is tallest
     for (int i = 1; i < 3; i++) {
       if (age[i]<age[youngestIndex]) {
+        
         youngestIndex = i;
       }
 

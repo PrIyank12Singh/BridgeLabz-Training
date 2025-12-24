@@ -21,6 +21,7 @@ public class multiply_from_6to9 {
     //display result 
     index = 0;
     for (int i = 6; i <= 9; i++) {
+      
       System.out.println(input + " * "+i+" = "+multiplicationResult[index]);
     }
     sc.close();

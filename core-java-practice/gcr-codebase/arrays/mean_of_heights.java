@@ -14,6 +14,7 @@ public class mean_of_heights {
 
     //find sum of all heights
     for (int i = 0; i < team_heights.length; i++) {
+      
       sum = sum+team_heights[i];
     }
 

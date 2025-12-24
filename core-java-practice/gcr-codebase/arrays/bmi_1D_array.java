@@ -30,6 +30,7 @@ public class bmi_1D_array {
       }
 
       else{
+        //
         status[i]="Obese";
       }
     }

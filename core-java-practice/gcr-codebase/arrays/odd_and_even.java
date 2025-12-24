@@ -41,6 +41,7 @@ public class odd_and_even {
 
     //print even numbers
     for (int i = 0; i < evenIndex; i++) {
+      
       System.out.println(even[i]+" ");
     }
 

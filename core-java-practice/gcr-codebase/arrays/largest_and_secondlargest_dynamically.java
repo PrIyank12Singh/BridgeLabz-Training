@@ -12,6 +12,7 @@ public class largest_and_secondlargest_dynamically {
     //seperating digits of number and storing it in array
     while (num!=0) {
       if (index==maxDigit) {
+        
         maxDigit+=10;
         int[] temp = new int[maxDigit];
         for (int i = 0; i < digits.length; i++) {

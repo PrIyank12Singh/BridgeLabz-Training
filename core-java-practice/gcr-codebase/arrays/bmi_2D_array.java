@@ -16,6 +16,7 @@ public class bmi_2D_array {
       person_data[i][2] = person_data[i][0] / (person_data[i][1]*person_data[i][1]);
 
       if(person_data[i][2]<18.5){
+        
         status[i]= "Underweight";
       }
 

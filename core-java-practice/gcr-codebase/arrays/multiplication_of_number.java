@@ -13,6 +13,7 @@ public class multiplication_of_number {
     //printing the table of input number 
 
     for (int i = 1; i < a.length; i++) {
+      
       a[i] = num*i;
       System.out.println(num+" * "+i+ " = "+ a[i]);
     }

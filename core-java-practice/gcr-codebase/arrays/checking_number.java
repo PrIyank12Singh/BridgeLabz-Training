@@ -35,6 +35,7 @@ public class checking_number {
     }
 
     if(a[0]>a[n-1]){
+      
       System.out.println("The first element is greater");
     }
 

@@ -24,6 +24,7 @@ public class percentage_and_grade_2D {
       }
 
       else if(percentage[i]>=70){
+        
         grade[i]="B";
         remark[i] = "(Level 3, at agency-normalized standards)";
       }

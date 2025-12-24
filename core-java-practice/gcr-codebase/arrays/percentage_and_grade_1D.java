@@ -48,6 +48,7 @@ public class percentage_and_grade_1D {
     }
 
     for (int i = 0; i < n; i++) {
+      
       System.out.println(grade[i]+" "+remark[i]+" "+percentage[i]);
     }
     sc.close();

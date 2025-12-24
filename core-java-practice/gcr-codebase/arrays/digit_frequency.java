@@ -13,6 +13,7 @@ public class digit_frequency {
     }
 
     for (int i = 0; i < 10; i++) {
+      
       System.out.println(i+" occurs "+freq[i]+" times");
     }
 

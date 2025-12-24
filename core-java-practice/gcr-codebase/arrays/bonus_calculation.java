@@ -29,8 +29,7 @@ public class bonus_calculation {
       if (service[i]>5) 
         bonus[i] = salary[i] * 0.5;
 
-      else
-        bonus[i] = salary[i] * 0.2;
+      else bonus[i] = salary[i] * 0.2;
       
       newSalary[i] = salary[i]+bonus[i];
 

@@ -15,6 +15,7 @@ public class age_to_vote {
     //checking who has the right to vote or not
 
     for (int i = 0;i < a.length;i++) {
+      
       if(a[i]>=18){
         System.out.println("The student with the age "+a[i]+" has right to vote");
       }

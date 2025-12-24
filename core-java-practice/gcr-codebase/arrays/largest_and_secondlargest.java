@@ -20,6 +20,7 @@ public class largest_and_secondlargest {
 
     //finding the largest and second largest digit from array
     for (int i = 0; i < index; i++) {
+      
       if (digits[i]>largest) {
         secondLargest = largest;
         largest= digits[i];

@@ -16,6 +16,7 @@ public class FizzBuzz {
 
     //loop from 0 to num and save values
     for (int i = 0; i <= num; i++) {
+      
       if (i%3==0 && i%5==0) {
         result[i] = "FizzBuzz";
       }

@@ -20,6 +20,7 @@ public class reverse_number_by_array {
 
     System.out.println("Reversed Number: ");
     for (int i = 0; i < count; i++) {
+      
       System.out.println(digits[i]);
     }
     sc.close();
