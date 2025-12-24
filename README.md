@@ -7,9 +7,11 @@ BridgeLabz-Training/
 │   │   ├── programming-elements/
 │   │   ├── control-flow/
 │   │   ├── arrays/
-│   │   └── strings/
+│   │   ├── strings/
+│   │   └── methods/
 │   ├── leet-code-codebase/
 │   └── scenario-based/
+
 ```
 
 
@@ -26,6 +28,7 @@ BridgeLabz-Training/
 
 
   
+
 
 
 
