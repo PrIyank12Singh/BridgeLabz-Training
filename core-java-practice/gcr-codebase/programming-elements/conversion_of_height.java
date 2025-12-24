@@ -2,6 +2,7 @@ import java.util.*;
 public class conversion_of_height {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);   //Scanner is taken for input
+    //Taking input
     double centimeters = sc.nextInt();  //Input for centimeters 
 
     double inches = centimeters/2.54;   //Calculation of inches

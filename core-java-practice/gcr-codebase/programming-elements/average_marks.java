@@ -1,6 +1,7 @@
 
 public class average_marks {
   public static void main(String[] args) {
+    //Taking input
     int maths = 94;
     int physics = 95;
     int chemistry = 96;

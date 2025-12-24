@@ -3,6 +3,7 @@ import java.util.*;
 class Age_calculator{
   public static void main(String[] args) {
       Scanner sc = new Scanner(System.in);
+      //Taking input
       int birthYear = 2000;
       int currentYear = sc.nextInt();
       int age = currentYear - birthYear;

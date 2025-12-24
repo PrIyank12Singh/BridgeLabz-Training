@@ -2,6 +2,7 @@ import java.util.*;
 public class area_of_triangle {
   public static void main(String[] args) {
     Scanner sc =new Scanner(System.in);
+    //Taking input
     //Input base and height in inches
     double base = sc.nextDouble();
 

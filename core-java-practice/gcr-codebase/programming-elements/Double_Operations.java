@@ -3,6 +3,7 @@ public class Double_Operations {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
+    //Taking input
     //Taking a,b and c as a input
     double a = sc.nextInt();
     double b = sc.nextInt();

@@ -4,6 +4,8 @@ public class profit_and_loss {
     int sp = 191;
     int p = sp-cp;
 
+    //formula
+
     double profit_p = (p*100)/cp;
 
     System.out.println(

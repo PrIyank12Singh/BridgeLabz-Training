@@ -3,6 +3,8 @@ public class basic_arithmetic {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
+    //Taking input
+
     float number1 = sc.nextFloat();   //taking number1 as input 
     float number2 = sc.nextFloat();   //taking number2 as input 
 

@@ -3,6 +3,7 @@ import java.util.*;
 public class UniversityFees {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
+    //Taking input
     int fee = sc.nextInt();
 
     int  discount_p = sc.nextInt();

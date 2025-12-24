@@ -4,6 +4,8 @@ public class volume_of_earth {
 
     double r_m = 6378 * 0.621371;
 
+    //formula
+
     double volume_km = (4*3.14*Math.pow(radius_km,3))/3;
     double volume_m = (4*3.14* Math.pow(r_m, 3))/3;
 

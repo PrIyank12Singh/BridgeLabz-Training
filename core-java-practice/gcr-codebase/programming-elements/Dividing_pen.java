@@ -3,6 +3,8 @@ public class Dividing_pen {
     int pen = 14;
     int students = 3;
 
+    //formula
+
     int p = pen/students;
     int r = pen%students;
 

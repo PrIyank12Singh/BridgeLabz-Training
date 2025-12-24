@@ -3,7 +3,7 @@ import java.util.*;
 public class divisor_and_modulo {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    
+    //Taking input
     //Taking both numbers as input
     int number1 = sc.nextInt();
     int number2 = sc.nextInt();

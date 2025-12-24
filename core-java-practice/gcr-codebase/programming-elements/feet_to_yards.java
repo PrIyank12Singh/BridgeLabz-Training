@@ -3,6 +3,7 @@ public class feet_to_yards {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
+    //Taking input
     int distance_feet = sc.nextInt();               //taking input in feet
 
     int distance_yard = distance_feet /3;          //formula to calculate in yards from feet

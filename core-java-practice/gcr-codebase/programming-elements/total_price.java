@@ -3,6 +3,8 @@ import java.util.*;
 public class total_price {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
+
+    //Taking input
     
     double unitPrice = sc.nextDouble();            //taking unit's Price
 

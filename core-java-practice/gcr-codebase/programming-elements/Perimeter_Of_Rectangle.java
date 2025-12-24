@@ -4,6 +4,7 @@ import java.util.*;
 public class Perimeter_Of_Rectangle {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
+    //Taking input
     int l = sc.nextInt();
     int b = sc.nextInt();
 
