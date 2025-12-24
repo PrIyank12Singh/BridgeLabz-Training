@@ -8,9 +8,9 @@ public class twoSum {
         for(int i=0;i<nums.length;i++){
             int n1=nums[i];
             for(int j=0;j<nums.length;j++){
-               int n2=nums[j];
+                int n2=nums[j];
                 if(i!=j && n1+n2==target){
-                   
+            
                     return new int[]{i,j};
                 }
 
