@@ -51,6 +51,6 @@ public class EmployeeWageTillCondition {
 
         System.out.println("\nTotal Working Days: " + totalWorkingDays);
         System.out.println("Total Working Hours: " + totalWorkingHours);
-        System.out.println("Total Employee Wage: ₹" + totalWage);
+        System.out.println("Total Employee Wage: INR" + totalWage);
     }
 }
