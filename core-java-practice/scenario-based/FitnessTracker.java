@@ -1,23 +1,33 @@
+import java.util.*;
 public class FitnessTracker {
     public static void main(String[] args) {
 
-        // Push-ups for 7 days (0 = rest day)
-        int[] pushUps = {20, 25, 0, 30, 35, 0, 40};
+        Scanner scan = new Scanner(System.in);
 
-        int total = 0;
+
+        // Push-ups for 7 days (0 = rest day)
+        int[] pushUps = new int[7] ;
+
+        for (int i = 0; i < pushUps.length; i++) {
+          pushUps[i] = scan.nextInt();
+        }
+
+        int totalPushUps = 0;
         int workoutDays = 0;
 
         for (int day : pushUps) {
             if (day == 0) {
                 continue; // skip rest day
             }
-            total += day;
+            totalPushUps += day;
             workoutDays++;
         }
 
-        double average = (double) total / workoutDays;
+        double average = (double) totalPushUps / workoutDays;
 
-        System.out.println("Total Push-ups: " + total);
+        System.out.println("Total Push-ups: " + totalPushUps);
         System.out.println("Average Push-ups per workout day: " + average);
+
+        scan.close();
     }
 }

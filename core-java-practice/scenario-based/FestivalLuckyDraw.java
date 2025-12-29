@@ -21,12 +21,12 @@ public class FestivalLuckyDraw {
 
       //check divisibility by 3 and 5
       if (num%3==0 && num%5==0) {
-        System.out.println("Congratulations! You win a gift!");
+        System.out.println("Visitor "+i+" wins a gift.");
 
       }
 
       else{
-        System.out.println("Better luck next time");
+        System.out.println("Visitor "+i+" does not wins a gift.");
       }
     }
 
