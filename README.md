@@ -4,12 +4,13 @@
 BridgeLabz-Training/
 ├── core-java-practice/   (Branch & Folder Name)
 │   ├── gcr-codebase/
-│   │   ├── programming-elements/
-│   │   ├── control-flow/
 │   │   ├── arrays/
-│   │   ├── strings/
+│   │   ├── class-and-object/
+│   │   ├── control-flow/
+│   │   ├── extras/
 │   │   ├── methods/
-│   │   └── extras/
+│   │   ├── programming-elements/
+│   │   └── strings/
 │   ├── leet-code-codebase/
 │   └── scenario-based/
 
@@ -35,8 +36,16 @@ BridgeLabz-Training/
 - 24-Dec-2025 (Wednseday) : Studied methods and solved levels of methods.[Click here](https://github.com/PrIyank12Singh/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/methods)
 - 26-Dec-2025 (Friday) : Studied extras questions of Strings.[Click here](https://github.com/PrIyank12Singh/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/extras)
 
+  ---
+
+##Week 3 - Object-Oriented Programming
+- 29-Dec-2025 (Monday) : Solved User Cases of Employee Wage and Line Comparison which helps in practicing DRY concept. [Click here](https://github.com/PrIyank12Singh/BridgeLabz-Training/tree/core-java-practice/core-java-practice/scenario-based)
+- 30-Dec-2025 (Tuesday) : Solved 2 levels of Java Class and Object 2 levels.[Click here](https://github.com/PrIyank12Singh/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/class-and-object)
+
+
 
   
+
 
 
 
