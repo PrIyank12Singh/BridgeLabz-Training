@@ -2,28 +2,17 @@
 
 ```text
 BridgeLabz-Training/
-│
-├── core-java-practice/            (Branch & Folder Name)
-│   │
+├── core-java-practice/   (Branch & Folder Name)
 │   ├── gcr-codebase/
+│   │   ├── arrays/
+│   │   ├── class-and-object/
+│   │   ├── control-flow/
+│   │   ├── extras/
+│   │   ├── methods/
 │   │   ├── programming-elements/
-│   │   └── control-flow/
-│   │
+│   │   └── strings/
 │   ├── leet-code-codebase/
-│   │
 │   └── scenario-based/
-│
-├── oops-practice/                 (Branch & Folder Name)
-│   │
-│   ├── gcr-codebase/
-│   │   ├── inheritance/
-│   │   ├── encapsulation/
-│   │   └── polymorphism/
-│   │
-│   ├── scenario-based/
-│   │
-│   └── leet-code-codebase/
-│
 ├── reviews/                       (Branch Name)
 
 
@@ -57,6 +46,7 @@ BridgeLabz-Training/
 
 
   
+
 
 
 
