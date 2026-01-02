@@ -4,7 +4,7 @@ import java.util.*;
 
 public class twoSum {
 
-    public static int[] twoSum(int[] nums, int target) {
+    public static int[] two_Sum(int[] nums, int target) {
         for(int i=0;i<nums.length;i++){
 
             int n1=nums[i];
@@ -34,7 +34,7 @@ public class twoSum {
 
         int target = sc.nextInt();
 
-        int[] ans = twoSum(nums, target);
+        int[] ans = two_Sum(nums, target);
         System.out.println(Arrays.toString(ans));
 
         sc.close();
