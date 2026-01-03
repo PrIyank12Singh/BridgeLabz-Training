@@ -45,7 +45,7 @@ BridgeLabz-Training/
 
   ---
 
-##Week 3 - Object-Oriented Programming
+## Week 3 - Object-Oriented Programming
 - 29-Dec-2025 (Monday) : Solved User Cases of Employee Wage and Line Comparison which helps in practicing DRY concept. [Click here](https://github.com/PrIyank12Singh/BridgeLabz-Training/tree/core-java-practice/core-java-practice/scenario-based)
 - 30-Dec-2025 (Tuesday) : Solved 2 levels of Java Class and Object 2 levels.[Click here](https://github.com/PrIyank12Singh/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/class-and-object)
 - 31-Dec-2025 (Wednesday) : Solved Java Constructors, Instance vs. Class Variables, Access Modifiers level-wise problems.[Click here](https://github.com/PrIyank12Singh/BridgeLabz-Training/tree/oops-practice/gcr-codebase/constructor-instancevsclass-accessmodifiers)
@@ -55,6 +55,7 @@ BridgeLabz-Training/
 
 
   
+
 
 
 
