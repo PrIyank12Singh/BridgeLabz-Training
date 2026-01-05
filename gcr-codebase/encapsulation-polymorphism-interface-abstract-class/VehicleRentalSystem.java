@@ -23,7 +23,7 @@ abstract class Vehicle {
         this.insurancePolicyNumber = policyNumber;
     }
 
-    // getters (Encapsulation)
+    // Encapsulation using getters
     public String getVehicleNumber() {
         return vehicleNumber;
     }
