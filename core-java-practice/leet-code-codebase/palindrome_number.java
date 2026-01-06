@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
-class palindrome_number {
-    public boolean isPalindrome(int x) {
+class PalindromeNumber {
+
+    public static boolean isPalindrome(int x) {
         if (x < 0) {
             return false;
         }
@@ -14,16 +15,18 @@ class palindrome_number {
             x /= 10;
         }
 
-        return reverse == xcopy;        
+        return reverse == xcopy;
     }
 
     public static void main(String[] args) {
-      Scanner sc = new Scanner(System.in);
-      int x = sc.nextInt();
 
-      int isBoolean = isPalindrome(x);
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
 
-      System.out.println(isBoolean);
-      sc.close();
+        boolean isBoolean = isPalindrome(x);
+
+        System.out.println(isBoolean);
+
+        sc.close();
     }
 }
