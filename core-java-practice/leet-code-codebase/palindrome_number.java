@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class palindrome_number {
     public boolean isPalindrome(int x) {
         if (x < 0) {
@@ -13,5 +15,15 @@ class palindrome_number {
         }
 
         return reverse == xcopy;        
+    }
+
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int x = sc.nextInt();
+
+      int isBoolean = isPalindrome(x);
+
+      System.out.println(isBoolean);
+      sc.close();
     }
 }
