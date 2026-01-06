@@ -7,12 +7,12 @@ class InvalidScoreException extends Exception {
     }
 }
 
-// StudentScores class
-class StudentScores {
+// ScoreData class (MODEL)
+class ScoreData {
     private int[] scores;
 
     // Constructor with validation
-    public StudentScores(int[] scores) throws InvalidScoreException {
+    public ScoreData(int[] scores) throws InvalidScoreException {
         for (int score : scores) {
             if (score < 0 || score > 100) {
                 throw new InvalidScoreException(
@@ -30,24 +30,24 @@ class StudentScores {
 
 // Analyzer class (BUSINESS LOGIC)
 class ScoreAnalyzer {
-    private StudentScores studentScores;
+    private ScoreData scoreData;
 
     // Constructor
-    public ScoreAnalyzer(StudentScores studentScores) {
-        this.studentScores = studentScores;
+    public ScoreAnalyzer(ScoreData scoreData) {
+        this.scoreData = scoreData;
     }
 
     public double calculateAverage() {
         int sum = 0;
-        for (int score : studentScores.getScores()) {
+        for (int score : scoreData.getScores()) {
             sum += score;
         }
-        return (double) sum / studentScores.getScores().length;
+        return (double) sum / scoreData.getScores().length;
     }
 
     public int findMax() {
-        int max = studentScores.getScores()[0];
-        for (int score : studentScores.getScores()) {
+        int max = scoreData.getScores()[0];
+        for (int score : scoreData.getScores()) {
             if (score > max) {
                 max = score;
             }
@@ -56,8 +56,8 @@ class ScoreAnalyzer {
     }
 
     public int findMin() {
-        int min = studentScores.getScores()[0];
-        for (int score : studentScores.getScores()) {
+        int min = scoreData.getScores()[0];
+        for (int score : scoreData.getScores()) {
             if (score < min) {
                 min = score;
             }
@@ -66,7 +66,7 @@ class ScoreAnalyzer {
     }
 }
 
-// Main Application (UI)
+// Main Application
 public class StudentScoreApp {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -81,11 +81,9 @@ public class StudentScoreApp {
                 scores[i] = sc.nextInt();
             }
 
-            // Create objects
-            StudentScores studentScores = new StudentScores(scores);
-            ScoreAnalyzer analyzer = new ScoreAnalyzer(studentScores);
+            ScoreData scoreData = new ScoreData(scores);
+            ScoreAnalyzer analyzer = new ScoreAnalyzer(scoreData);
 
-            // Display results
             System.out.println("\n--- Score Analysis Report ---");
             System.out.printf("Average Score : %.2f%n", analyzer.calculateAverage());
             System.out.println("Highest Score : " + analyzer.findMax());
