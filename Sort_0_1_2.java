@@ -2,10 +2,11 @@ import java.util.*;
 public class Sort_0_1_2 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
+    //Taking input
     int n = sc.nextInt();
 
     int[] arr = new int[n];
-
+    //Taking array as input
     for (int i = 0; i < arr.length; i++) {
       arr[i] = sc.nextInt();
     }
