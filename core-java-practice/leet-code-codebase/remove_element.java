@@ -29,7 +29,9 @@ class RemoveElement {
 
         int answer = removeElement(nums, val);
 
-        System.out.println(answer);
+        
+
+        System.out.println(answer);   //length after removing
 
         sc.close();
     }
