@@ -7,79 +7,93 @@ class InvalidScoreException extends Exception {
     }
 }
 
-// Class representing a Student
-class Student {
-    private int score;
+// StudentScores class
+class StudentScores {
+    private int[] scores;
 
-    public Student(int score) throws InvalidScoreException {
-        if (score < 0 || score > 100) {
-            throw new InvalidScoreException("Score must be between 0 and 100. Invalid score: " + score);
+    // Constructor with validation
+    public StudentScores(int[] scores) throws InvalidScoreException {
+        for (int score : scores) {
+            if (score < 0 || score > 100) {
+                throw new InvalidScoreException(
+                    "Invalid score detected: " + score + ". Score must be between 0 and 100."
+                );
+            }
         }
-        this.score = score;
+        this.scores = scores;
     }
 
-    public int getScore() {
-        return score;
+    public int[] getScores() {
+        return scores;
     }
 }
 
-// Class for analyzing student scores
+// Analyzer class (BUSINESS LOGIC)
 class ScoreAnalyzer {
-    private Student[] students;
+    private StudentScores studentScores;
 
-    public ScoreAnalyzer(Student[] students) {
-        this.students = students;
+    // Constructor
+    public ScoreAnalyzer(StudentScores studentScores) {
+        this.studentScores = studentScores;
     }
 
     public double calculateAverage() {
         int sum = 0;
-        for (Student s : students) {
-            sum += s.getScore();
+        for (int score : studentScores.getScores()) {
+            sum += score;
         }
-        return (double) sum / students.length;
+        return (double) sum / studentScores.getScores().length;
     }
 
     public int findMax() {
-        int max = students[0].getScore();
-        for (Student s : students) {
-            if (s.getScore() > max) max = s.getScore();
+        int max = studentScores.getScores()[0];
+        for (int score : studentScores.getScores()) {
+            if (score > max) {
+                max = score;
+            }
         }
         return max;
     }
 
     public int findMin() {
-        int min = students[0].getScore();
-        for (Student s : students) {
-            if (s.getScore() < min) min = s.getScore();
+        int min = studentScores.getScores()[0];
+        for (int score : studentScores.getScores()) {
+            if (score < min) {
+                min = score;
+            }
         }
         return min;
     }
 }
 
-// Main Application
+// Main Application (UI)
 public class StudentScoreApp {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter number of students: ");
-        int n = sc.nextInt();
-        Student[] students = new Student[n];
+        try {
+            System.out.print("Enter number of students: ");
+            int n = sc.nextInt();
 
-        for (int i = 0; i < n; i++) {
-            System.out.print("Enter score for student " + (i + 1) + ": ");
-            int score = sc.nextInt();
-            try {
-                students[i] = new Student(score);
-            } catch (InvalidScoreException e) {
-                System.out.println(e.getMessage());
-                i--; // retry this student
+            int[] scores = new int[n];
+            for (int i = 0; i < n; i++) {
+                System.out.print("Enter score for student " + (i + 1) + ": ");
+                scores[i] = sc.nextInt();
             }
-        }
 
-        ScoreAnalyzer analyzer = new ScoreAnalyzer(students);
-        System.out.println("\nAverage Score: " + analyzer.calculateAverage());
-        System.out.println("Highest Score: " + analyzer.findMax());
-        System.out.println("Lowest Score: " + analyzer.findMin());
+            // Create objects
+            StudentScores studentScores = new StudentScores(scores);
+            ScoreAnalyzer analyzer = new ScoreAnalyzer(studentScores);
+
+            // Display results
+            System.out.println("\n--- Score Analysis Report ---");
+            System.out.printf("Average Score : %.2f%n", analyzer.calculateAverage());
+            System.out.println("Highest Score : " + analyzer.findMax());
+            System.out.println("Lowest Score  : " + analyzer.findMin());
+
+        } catch (InvalidScoreException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
 
         sc.close();
     }
