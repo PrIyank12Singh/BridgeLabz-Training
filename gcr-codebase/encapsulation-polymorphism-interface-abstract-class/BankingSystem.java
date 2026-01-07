@@ -51,7 +51,7 @@ abstract class BankAccount {
 //savings Account
 class SavingsAccount extends BankAccount implements Loanable {
 
-    public SavingsAccount(String accNo, String name, double balance) {
+    public SavingsAccount(int accNo, String name, double balance) {
         super(accNo, name, balance);
     }
 
