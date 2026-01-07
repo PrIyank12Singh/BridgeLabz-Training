@@ -52,6 +52,8 @@ public class Main {
             // DELETE (optional)
             // rideService.deleteRide(ride.getRideId());
 
+            sc.close();
+
         } catch (NoDriverAvailableException e) {
             System.out.println(e.getMessage());
         }
