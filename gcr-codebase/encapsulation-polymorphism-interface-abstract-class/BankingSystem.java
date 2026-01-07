@@ -6,7 +6,7 @@ interface Loanable {
     double calculateLoanEligibility();
 }
 
-// abstract Class
+// abstract class
 abstract class BankAccount {
     private String accountNumber;
     private String holderName;
@@ -19,7 +19,7 @@ abstract class BankAccount {
         this.balance = balance;
     }
 
-    // encapsulation (Getters)
+    // encapsulation (getters)
     public String getAccountNumber() {
         return "XXXX" + accountNumber.substring(accountNumber.length() - 4);
     }
@@ -48,10 +48,11 @@ abstract class BankAccount {
     // abstract method
     public abstract double calculateInterest();
 }
-//savings Account
+
+// Savings Account
 class SavingsAccount extends BankAccount implements Loanable {
 
-    public SavingsAccount(int accNo, String name, double balance) {
+    public SavingsAccount(String accNo, String name, double balance) {
         super(accNo, name, balance);
     }
 
@@ -70,7 +71,8 @@ class SavingsAccount extends BankAccount implements Loanable {
         return balance * 5;
     }
 }
-//current Account
+
+// Current Account
 class CurrentAccount extends BankAccount {
 
     public CurrentAccount(String accNo, String name, double balance) {
@@ -83,7 +85,7 @@ class CurrentAccount extends BankAccount {
     }
 }
 
-//main Class
+// main class
 public class BankingSystem {
 
     public static void main(String[] args) {
@@ -96,7 +98,7 @@ public class BankingSystem {
         accounts.add(acc1);
         accounts.add(acc2);
 
-        //polymorphism in action
+        // polymorphism in action
         for (BankAccount acc : accounts) {
             System.out.println("Account Holder: " + acc.getHolderName());
             System.out.println("Account No: " + acc.getAccountNumber());
@@ -107,7 +109,7 @@ public class BankingSystem {
                         ((Loanable) acc).calculateLoanEligibility());
             }
 
-            System.out.println( );
+            System.out.println();
         }
     }
 }
