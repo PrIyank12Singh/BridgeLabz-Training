@@ -1,5 +1,3 @@
-import addressbook.dao.AddressBookDAO;
-import addressbook.model.Contact;
 import java.util.List;
 
 

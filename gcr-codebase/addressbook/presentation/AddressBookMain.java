@@ -1,5 +1,3 @@
-import addressbook.model.Contact;
-import addressbook.service.AddressBookService;
 import java.util.*;
 
 
@@ -24,13 +22,25 @@ scanner.nextLine();
 
 
 switch (choice) {
-case 1 -> addContact();
-case 2 -> deleteContact();
-case 3 -> search();
-case 4 -> count();
-case 5 -> System.exit(0);
-default -> System.out.println("Invalid choice");
+    case 1:
+        addContact();
+        break;
+    case 2:
+        deleteContact();
+        break;
+    case 3:
+        search();
+        break;
+    case 4:
+        count();
+        break;
+    case 5:
+        System.exit(0);
+        break;
+    default:
+        System.out.println("Invalid choice");
 }
+
 }
 }
 
