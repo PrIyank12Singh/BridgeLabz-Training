@@ -5,6 +5,7 @@ public class TodoAnnotationDemo {
     public static void main(String[] args) {
 
         try {
+            
             Class<ProjectModule> cls = ProjectModule.class;
 
             Method[] methods = cls.getDeclaredMethods();

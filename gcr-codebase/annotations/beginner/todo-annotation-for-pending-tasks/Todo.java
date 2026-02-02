@@ -6,6 +6,7 @@ import java.lang.annotation.ElementType;
 @Retention(RetentionPolicy.RUNTIME)   // Needed to access at runtime
 @Target(ElementType.METHOD)           // Can be applied to methods
 @interface Todo {
+    
     String task();
     String assignedTo();
     String priority() default "MEDIUM";

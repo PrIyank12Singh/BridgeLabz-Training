@@ -16,7 +16,7 @@ public class DeprecatedDemo {
 
         LegacyAPI api = new LegacyAPI();
 
-        api.oldFeature();   // Deprecated method
+        api.oldFeature();   //Deprecated method
         api.newFeature();   // Recommended method
     }
 }
