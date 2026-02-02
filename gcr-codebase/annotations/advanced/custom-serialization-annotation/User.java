@@ -9,6 +9,7 @@ class User {
     private int age;  // Not annotated, will be ignored
 
     public User(String username, String email, int age) {
+        
         this.username = username;
         this.email = email;
         this.age = age;

@@ -10,7 +10,7 @@ class User {
         validateFields();
     }
 
-    // Reflection-based field validation
+    // reflection-based field validation
     private void validateFields() {
         Field[] fields = this.getClass().getDeclaredFields();
 

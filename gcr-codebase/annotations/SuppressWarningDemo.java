@@ -5,7 +5,7 @@ public class SuppressWarningDemo {
     @SuppressWarnings("unchecked")
     public static void main(String[] args) {
 
-        ArrayList list = new ArrayList(); // raw type
+        ArrayList list = new ArrayList(); // raw Type
 
         list.add("Java");
         list.add(10);

@@ -1,7 +1,7 @@
 import java.lang.annotation.*;
 import java.lang.reflect.*;
 
-// Container annotation
+// Container annotations
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 @interface BugReports {

@@ -12,7 +12,7 @@ public class CacheResultDemo {
 
         Method method = MathService.class.getMethod("factorial", int.class);
 
-        int[] inputs = {5, 6, 5}; // 5 repeated to test cache
+        int[] inputs = {5, 6, 5}; // 5 repeated to test Cache
 
         for (int n : inputs) {
             Object result;

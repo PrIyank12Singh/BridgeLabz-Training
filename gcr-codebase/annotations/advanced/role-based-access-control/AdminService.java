@@ -11,6 +11,7 @@ class AdminService {
     }
 
     public void viewProfile() {
+        
         System.out.println("Profile viewed");
     }
 }

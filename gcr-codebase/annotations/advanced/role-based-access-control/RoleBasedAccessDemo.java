@@ -6,7 +6,7 @@ public class RoleBasedAccessDemo {
 
         AdminService service = new AdminService();
 
-        String currentUserRole = "USER"; // Change to "ADMIN" to allow access
+        String currentUserRole = "USER"; // Change to "ADMIN" to Allow access
 
         Method[] methods = AdminService.class.getDeclaredMethods();
 

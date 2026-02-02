@@ -11,6 +11,6 @@ class Project {
     }
 
     public void documentation() {
-        System.out.println("Writing documentation...");
+        System.out.println("Writing documentation... ");
     }
 }

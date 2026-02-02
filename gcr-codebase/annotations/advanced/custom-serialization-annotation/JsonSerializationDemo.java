@@ -10,6 +10,7 @@ public class JsonSerializationDemo {
         boolean first = true;
 
         for (Field field : fields) {
+            
             if (field.isAnnotationPresent(JsonField.class)) {
                 field.setAccessible(true);
                 try {

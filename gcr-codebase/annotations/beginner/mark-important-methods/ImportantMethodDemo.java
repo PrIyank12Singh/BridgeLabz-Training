@@ -21,7 +21,7 @@ public class ImportantMethodDemo {
                 }
             }
 
-            // Optional: Call methods
+            // Optional: call methods
             Project p = new Project();
             p.deploy();
             p.test();

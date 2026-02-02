@@ -3,7 +3,7 @@ class PerformanceTest {
     @LogExecutionTime
     public void fastTask() {
         for (int i = 0; i < 100000; i++) {
-            // simulate fast work
+            // simulate fast Work
         }
     }
 

@@ -7,7 +7,7 @@ public class TaskInfoDemo {
         try {
             Class<TaskManager> cls = TaskManager.class;
 
-            // Get method
+            // get method
             Method method = cls.getMethod("completeTask");
 
             // Check if annotation is present
