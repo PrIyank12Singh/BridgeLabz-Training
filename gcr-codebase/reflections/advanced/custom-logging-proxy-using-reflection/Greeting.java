@@ -1,3 +1,0 @@
-interface Greeting {
-    void sayHello();
-}
