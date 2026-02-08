@@ -15,25 +15,32 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sonar.host.url>http://localhost:9000</sonar.host.url>
+        <junit.jupiter.version>5.10.0</junit.jupiter.version>
     </properties>
 
     <dependencies>
+        <!-- JUnit 5 for testing -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.10.0</version>
+            <version>${junit.jupiter.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
 
     <build>
         <plugins>
+            <!-- Surefire plugin for running tests -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
+                <configuration>
+                    <useModulePath>false</useModulePath> <!-- Fixes JUnit 5 issues with Java 9+ -->
+                </configuration>
             </plugin>
 
+            <!-- JaCoCo plugin for code coverage -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -54,6 +61,7 @@
                 </executions>
             </plugin>
 
+            <!-- SonarQube plugin -->
             <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
