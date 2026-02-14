@@ -1,95 +1,66 @@
-import java.util.*;
+package presentation;
 
+import service.AddressBookService;
+
+import java.util.Scanner;
 
 public class AddressBookMain {
 
+    public static void main(String[] args) {
 
-private static Scanner scanner = new Scanner(System.in);
-private static AddressBookService service = new AddressBookService();
+        System.out.println("===== Address Book System =====");
 
+        AddressBookService service = new AddressBookService();
+        Scanner scanner = new Scanner(System.in);
 
-public static void main(String[] args) {
-System.out.println("Welcome to Address Book Program");
+        boolean exit = false;
 
+        while (!exit) {
 
-service.createAddressBook("Default");
+            System.out.println("\n1. Create Address Book");
+            System.out.println("2. Select Address Book");
+            System.out.println("3. Add Contact");
+            System.out.println("4. Display Contacts");
+            System.out.println("5. View Persons By City");
+            System.out.println("6. View Persons By State");
+            System.out.println("7. Count By City");
+            System.out.println("8. Count By State");
+            System.out.println("9. Sort By Name");
+            System.out.println("10. Sort By City");
+            System.out.println("11. Sort By State");
+            System.out.println("12. Sort By Zip");
+            System.out.println("13. Save Contacts to JSON");
+            System.out.println("14. Load Contacts from JSON");
+            System.out.println("0. Exit");
 
+            System.out.print("Enter Choice: ");
+            int choice = scanner.nextInt();
+            scanner.nextLine();
 
-while (true) {
-System.out.println("\n1.Add Contact 2.Delete Contact 3.Search 4.Count 5.Exit");
-int choice = scanner.nextInt();
-scanner.nextLine();
+            switch (choice) {
 
+                case 1 -> service.createAddressBook();
+                case 2 -> service.selectAddressBook();
+                case 3 -> service.addContactUsingConsole();
+                case 4 -> service.displayContacts();
+                case 5 -> service.viewPersonsByCity();
+                case 6 -> service.viewPersonsByState();
+                case 7 -> service.countByCity();
+                case 8 -> service.countByState();
+                case 9 -> service.sortByName();
+                case 10 -> service.sortByCity();
+                case 11 -> service.sortByState();
+                case 12 -> service.sortByZip();
+                case 13 -> service.saveContactsToJson();
+                case 14 -> service.loadContactsFromJson();
+                case 0 -> {
+                    exit = true;
+                    System.out.println("Exiting...");
+                }
+                default -> System.out.println("Invalid Choice!");
+            }
+        }
 
-switch (choice) {
-    case 1:
-        addContact();
-        break;
-    case 2:
-        deleteContact();
-        break;
-    case 3:
-        search();
-        break;
-    case 4:
-        count();
-        break;
-    case 5:
-        System.exit(0);
-        break;
-    default:
-        System.out.println("Invalid choice");
-}
-
-}
-}
-
-
-private static void addContact() {
-System.out.print("First Name: ");
-String fn = scanner.nextLine();
-System.out.print("Last Name: ");
-String ln = scanner.nextLine();
-System.out.print("Address: ");
-String addr = scanner.nextLine();
-System.out.print("City: ");
-String city = scanner.nextLine();
-System.out.print("State: ");
-String state = scanner.nextLine();
-System.out.print("Zip: ");
-String zip = scanner.nextLine();
-System.out.print("Phone: ");
-String phone = scanner.nextLine();
-System.out.print("Email: ");
-String email = scanner.nextLine();
-
-
-Contact c = new Contact(fn, ln, addr, city, state, zip, phone, email);
-boolean added = service.addContact("Default", c);
-
-
-System.out.println(added ? "Contact Added" : "Duplicate Contact Not Allowed");
-}
-
-
-private static void deleteContact() {
-System.out.print("Enter First Name to Delete: ");
-String name = scanner.nextLine();
-boolean deleted = service.deleteContact("Default", name);
-System.out.println(deleted ? "Deleted" : "Not Found");
-}
-
-
-private static void search() {
-System.out.print("Enter City or State: ");
-String val = scanner.nextLine();
-service.searchPerson(val).forEach(System.out::println);
-}
-
-
-private static void count() {
-System.out.print("Enter City or State: ");
-String val = scanner.nextLine();
-System.out.println("Count = " + service.countPerson(val));
+        scanner.close();
     }
 }
